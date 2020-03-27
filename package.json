@@ -9,6 +9,11 @@
 	"categories": [
 		"Other"
 	],
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#BDD7EE",
+		"theme": "dark"
+	},
 	"activationEvents": [
 		"onCommand:extension.insertTemplate"
 	],
