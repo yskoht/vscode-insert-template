@@ -13,7 +13,7 @@ Choose `Insert Template` from the Command Palette (`Cmd + Shift + P`). And selec
 ## Extension Settings
 
 * `insertTemplate.directory`: (optional) search directory for template files (default: `~/.vscode-templates`)
-* `ignore`: (optional) an array of glob patterns to exclude matches.
+* `insertTemplate.ignore`: (optional) an array of glob patterns to exclude matches.
 
 ### Setting Examples
 
