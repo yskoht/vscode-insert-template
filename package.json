@@ -16,7 +16,7 @@
 	"icon": "images/icon.png",
 	"galleryBanner": {
 		"color": "#BDD7EE",
-		"theme": "dark"
+		"theme": "light"
 	},
 	"activationEvents": [
 		"onCommand:extension.insertTemplate"
