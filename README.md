@@ -12,6 +12,18 @@
 
 Insert template file in active file.
 
+Available commands:
+
+```json
+[
+	{
+		"command": "extension.insertTemplate",
+		"title": "Insert Template",
+		"key": "ctrl+shift+i"
+	}
+]
+```
+
 ## Demo
 
 Choose `Insert Template` from the Command Palette (`Cmd + Shift + P`). And select your template file name.
@@ -22,27 +34,25 @@ Choose `Insert Template` from the Command Palette (`Cmd + Shift + P`). And selec
 
 ## Extension Settings
 
-* `insertTemplate.directory`: (optional) search directory for template files (default: `~/.vscode-templates`)
-* `insertTemplate.ignore`: (optional) an array of glob patterns to exclude matches.
+```json
+"insertTemplate.directory": {
+	"type": "string",
+	"default": "~/.vscode-templates",
+	"description": "Search directory for template files"
+},
+"insertTemplate.ignore": {
+	"type": ["array", "null"],
+	"default": null,
+	"description": "An array of glob patterns to exclude matches"
+}
+```
 
 ### Setting Examples
 
 settings.json
 ```json
-  "insertTemplate": {
-    "directory": "~/prg/competitive-programming",
-    "ignore": ["**/*.md", "**/tmp/**"]
-  }
-```
-
-## Assign Keybinding
-
-keybindings.json
-```json
-  {
-    "key": "ctrl+shift+i",
-    "command": "extension.insertTemplate"
-  },
+"insertTemplate.directory": "~/prg/competitive-programming",
+"insertTemplate.ignore": ["**/*.md", "**/tmp/**"]
 ```
 
 ## License
