@@ -23,6 +23,26 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"commands": [
+			{
+				"command": "extension.insertTemplate",
+				"title": "Insert Template"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "extension.insertTemplate",
+				"key": "ctrl+shift+i"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "extension.insertTemplate",
+					"group": "z_commands"
+				}
+			]
+		},
 		"configuration": {
 			"title": "InsertTemplate",
 			"properties": {
@@ -40,26 +60,6 @@
 					"description": "An array of glob patterns to exclude matches"
 				}
 			}
-		},
-		"commands": [
-			{
-				"command": "extension.insertTemplate",
-				"title": "Insert Template"
-			}
-		],
-		"keybindings": [
-			{
-				"command": "extension.insertTemplate",
-				"key": "ctrl+shift+i"
-			}
-		],
-		"menus": {
-			"editor/context": [
-				{
-					"command": "extension.insertTemplate",
-					"group": "navigation"
-				}
-			]
 		}
 	},
 	"scripts": {
