@@ -2,7 +2,7 @@
 	"name": "vscode-insert-template",
 	"displayName": "InsertTemplate",
 	"description": "Insert the template file",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"publisher": "yskoht",
 	"engines": {
 		"vscode": "^1.43.0"
@@ -53,7 +53,10 @@
 				"description": "Search directory for template files"
 			},
 			"insertTemplate.ignore": {
-				"type": ["array", "null"],
+				"type": [
+					"array",
+					"null"
+				],
 				"default": null,
 				"description": "An array of glob patterns to exclude matches"
 			}
