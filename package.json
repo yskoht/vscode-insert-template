@@ -2,7 +2,7 @@
 	"name": "vscode-insert-template",
 	"displayName": "InsertTemplate",
 	"description": "Insert the template file",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"publisher": "yskoht",
 	"engines": {
 		"vscode": "^1.43.0"
