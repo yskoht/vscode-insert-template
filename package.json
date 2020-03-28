@@ -83,7 +83,7 @@
 		"typescript": "^3.7.5",
 		"vscode-test": "^1.3.0"
 	},
-	"license": "SEE LICENSE",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/yskoht/vscode-insert-template/issues",
 		"email": "ysk.oht@gmail.com"
