@@ -23,6 +23,24 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"configuration": {
+			"title": "InsertTemplate",
+			"properties": {
+				"insertTemplate.directory": {
+					"type": "string",
+					"default": "~/.vscode-templates",
+					"description": "Search directory for template files"
+				},
+				"insertTemplate.ignore": {
+					"type": [
+						"array",
+						"null"
+					],
+					"default": null,
+					"description": "An array of glob patterns to exclude matches"
+				}
+			}
+		},
 		"commands": [
 			{
 				"command": "extension.insertTemplate",
@@ -34,32 +52,14 @@
 				"command": "extension.insertTemplate",
 				"key": "ctrl+shift+i"
 			}
-		]
-	},
-	"menus": {
-		"editor/context": [
-			{
-				"command": "extension.insertTemplate",
-				"group": "navigation"
-			}
-		]
-	},
-	"configuration": {
-		"title": "InsertTemplate",
-		"properties": {
-			"insertTemplate.directory": {
-				"type": "string",
-				"default": "~/.vscode-templates",
-				"description": "Search directory for template files"
-			},
-			"insertTemplate.ignore": {
-				"type": [
-					"array",
-					"null"
-				],
-				"default": null,
-				"description": "An array of glob patterns to exclude matches"
-			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "extension.insertTemplate",
+					"group": "navigation"
+				}
+			]
 		}
 	},
 	"scripts": {
