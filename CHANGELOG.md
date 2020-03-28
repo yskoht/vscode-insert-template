@@ -10,10 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.7] - 2020-03-28
 ### Changed
 - Fix license in package.json
+- Fix dependencies in package.json
 
 ## [0.0.6] - 2020-03-28
 ### Changed
-- Fix bug
+- Fix package.json
 
 ## [0.0.5] - 2020-03-28
 ### Changed
