@@ -46,9 +46,7 @@ const activeTextEditor = async (): Promise<vscode.TextEditor> => {
 const insertFile = async (editor: vscode.TextEditor, file: string): Promise<void> => {
 	const doc = await vscode.workspace.openTextDocument(file);
 	editor.edit(editBuilder => {
-		editor.selections.forEach(selection => {
-				editBuilder.insert(selection.start, doc.getText());
-		});
+		editBuilder.insert(editor.selection.start, doc.getText());
 	});
 };
 
