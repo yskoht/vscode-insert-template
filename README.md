@@ -12,18 +12,6 @@
 
 Insert template file in active file.
 
-Available commands:
-
-```json
-[
-	{
-		"command": "extension.insertTemplate",
-		"title": "Insert Template",
-		"key": "ctrl+shift+i"
-	}
-]
-```
-
 ## Demo
 
 Choose `Insert Template` from the Command Palette (`Cmd + Shift + P`). And select your template file name.
@@ -53,6 +41,17 @@ settings.json
 ```json
 "insertTemplate.directory": "~/prg/competitive-programming",
 "insertTemplate.ignore": ["**/*.md", "**/tmp/**"]
+```
+
+## Assign Key Binding
+
+keybindings.json
+
+```json
+  {
+    "key": "ctrl+shift+i",
+    "command": "extension.insertTemplate"
+  },
 ```
 
 ## License
