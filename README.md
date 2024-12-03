@@ -42,6 +42,7 @@ settings.json
 "insertTemplate.directory": "~/prg/competitive-programming",
 "insertTemplate.ignore": ["**/*.md", "**/tmp/**"]
 ```
+if you are on Windows, use "/" for the directory path, not "\\\\"
 
 ## Assign Key Binding
 
